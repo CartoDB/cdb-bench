@@ -1,0 +1,26 @@
+CartoDB benchmark utility. It will output by default a Vegeta bin report file
+
+Usage:
+  cdb-bench [flags]
+  cdb-bench [command]
+
+Available Commands:
+  tiles       Request random tiles in a zoom level given a layergroup
+  help        Help about any command
+
+
+Usage:
+  cdb-bench tiles [flags]
+Flags:
+  -l, --layergroup="0:0": Layergroup
+  -s, --seed=1434043703878960385: Random seed (default value is unix time in msecs)
+  -z, --zoom=10: Zoom level
+
+Global Flags:
+  -b, --base="http://127.0.0.1:8181": Base host to use
+  -d, --duration=30: Duration (in seconds)
+  -H, --hostname="devuser.localhost.lan": Host header
+  -r, --rate=30: Requests per second ratio
+
+
+Use "cdb-bench help [command]" for more information about a command.
