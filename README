@@ -12,6 +12,7 @@ Available Commands:
 Usage:
   cdb-bench tiles [flags]
 Flags:
+  -x, --bbox="0,0,-1,-1": Bounding box, XYXY (add a fitfth parameter to specify zoom if you want it to be translated to other zoom)
   -l, --layergroup="0:0": Layergroup
   -s, --seed=1434043703878960385: Random seed (default value is unix time in msecs)
   -z, --zoom=10: Zoom level
